@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>ACME Car Rental</h1>
+    </header>
+    <main>
+      <!--Two Labels/Inputs for Pickup date and Number Of Days-->
+      <div>
+        <label for="pickupInput">Pickup Date</label>
+        <input type="text" id="pickupInput" />
+      </div>
+      <div>
+        <label for="numberOfDays"> Number Of Days</label>
+        <input type="number" id="numberOfDays" />
+      </div>
+      <!-- OPTIONS -->
+      <div>
+        <p>Options</p>
+        <label for="tolls">Electronic Toll Tag ($3.95/day)</label>
+        <input type="checkbox" id="tolls" />
+      </div>
+      <div>
+        <label for="gps">GPS ($2.95/day)</label>
+        <input type="checkbox" id="gps" />
+      </div>
+      <div>
+        <label for="roadside">Roadside Assistance ($2.95/day)</label>
+        <input type="checkbox" id="roadside" />
+      </div>
+
+      <div>
+        <form>
+          <p>Under 25</p>
+          <input type="radio" name="raido-option" id="noChecked" />
+          <label for="noChecked">No</label>
+          <input type="radio" name="raido-option" id="yesChecked" />
+          <label for="yesChecked">Yes</label>
+        </form>
+      </div>
+
+      <!--button estimate total cost-->
+      <div>
+        <button type="button" id="estimateBtn">Estimate Total Cost</button>
+      </div>
+
+      <!--Recipet-->
+      <div>
+        <p>Car rental: xxx.xx</p>
+        <p>Options: xx.xx</p>
+        <p>Under 25:xx.xx</p>
+
+        <p>Total due: xx.xx</p>
+      </div>
+    </main>
+  </body>
+</html>

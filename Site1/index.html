@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- html goes here -->
+      <h1>Title</h1>
+      <p id="importantParagraph">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati illo
+        deleniti commodi nostrum. Ducimus esse odio asperiores repudiandae ipsam
+        culpa ab quae odit, veniam perferendis recusandae alias voluptates
+        sapiente dolore.
+      </p>
+      <form>
+        <!-- text -->
+        <label for="firstNameInput">First Name</label>
+        <input
+          type="text"
+          id="firstNameInput"
+          placeholder="enter first name"
+          value="Craig"
+        />
+
+        <!-- radiobutton group -->
+        <fieldset>
+          <legend>What do you want?</legend>
+          <input type="radio" name="bowlOrBurrito" id="bowlRadio" />
+          <label for="bowlRadio">Bowl</label>
+
+          <input type="radio" name="bowlOrBurrito" id="burritoRadio" />
+          <label for="burritoRadio">Burrito</label>
+        </fieldset>
+        <button onclick="placeOrder()" type="button">Place Order</button>
+
+        <!-- radiobutton group -->
+      </form>
+    </main>
+    <script src="scripts/main.js"></script>
+    <!-- <script>
+      "use strict";
+      console.log("ready");
+    </script> -->
+  </body>
+</html>
