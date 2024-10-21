@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+
     <title>Document</title>
   </head>
   <body>
@@ -16,8 +21,8 @@
         <input type="text" id="pickupInput" />
       </div>
       <div>
-        <label for="numberOfDays"> Number Of Days</label>
-        <input type="number" id="numberOfDays" />
+        <label for="numberOfDaysInput"> Number Of Days</label>
+        <input type="number" id="numberOfDaysInput" />
       </div>
       <!-- OPTIONS -->
       <div>
@@ -46,17 +51,22 @@
 
       <!--button estimate total cost-->
       <div>
-        <button type="button" id="estimateBtn">Estimate Total Cost</button>
+        <button type="button" onclick="calculateTotalCost()" id="estimateBtn">
+          Estimate Total Cost
+        </button>
       </div>
 
       <!--Recipet-->
       <div>
-        <p>Car rental: xxx.xx</p>
-        <p>Options: xx.xx</p>
-        <p>Under 25:xx.xx</p>
+        <p>Car rental: $<span id="carRecipet">xxx.xx</span></p>
+        <p>Options: $<span id="OptionsRecipet"> xx.xx</span></p>
+        <p>Under 25: $<span id="Under25Recipet">xx.xx</span></p>
 
-        <p>Total due: xx.xx</p>
+        <div id="spacethis">
+          <p>Total due:<span id="totalReciept">xx.xx</span></p>
+        </div>
       </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
